@@ -1,0 +1,39 @@
+Personalizar cualquier terminal que uses para comodidad 
+
+--> git init
+para iniciar un repositorio de git
+
+--git add "archivo o .(punto = agrega todo)"
+Sirve para agragar los archivos a stagin area previo al commit
+
+-->git status
+Estado del repositorio(si faltan archivos para agragar o que se modificaron)
+
+-->git commit -m (mensaje) "Mensaje del commit"
+Sirve para ejecutar un commit "Una nueva rama" en el proyecto.
+
+-->git config --global (configuración global) user.email "Email"(para establecer un correo en los commits)
+-->git config --global (configuración global) user.name "Nombre"(para establecer un nombre en los commits)
+Ambos comandos sirven para configurar algunos aspectos de Git
+
+-->git log
+Nos da un pequeño resumen de los comit que se han hecho. Agregar "--oneline" acorta la informacion de 
+los commit
+
+-->git checkout 'a22dc21'
+Sirve para volver a una version anterior del proyecto(Se tienen que poner los primeros numeros 
+identificadores del hash del commit), se puede seguir haciendo checkout despues del primero, pero hay que
+tener precaucion y ver en que rama estas.
+
+--> git reset 'hash commit'
+Devuelve el commit que seleccionas y los cambios hechos.
+
+--> git reset --hard 'hash commit'
+Borra el commit seleccionado
+
+--> rm 'archivo'
+Borras archivo pero permanecen en la stagin area
+
+--> git restore 'archivo'
+Recupera el archivo que esta borrado del directorio.
+

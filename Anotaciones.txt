@@ -1,7 +1,7 @@
 Personalizar cualquier terminal que uses para comodidad 
 
 --> git init
-para iniciar un repositorio de git
+para iniciar un repositorio de git.
 
 --git add "archivo o .(punto = agrega todo)"
 Sirve para agragar los archivos a stagin area previo al commit
@@ -11,6 +11,11 @@ Estado del repositorio(si faltan archivos para agragar o que se modificaron)
 
 -->git commit -m (mensaje) "Mensaje del commit"
 Sirve para ejecutar un commit "Una nueva rama" en el proyecto.
+
+--> git clone 'liga del repositorio'
+Es para copiar un proyecto de github, si piensas hacerlo por SSH debes tener la clave del mismo SSH. Sino
+dara error, y si ya estas trabajando en proyectos ve a la seccion en SSH agent para trabajar mas tranquilo.
+Nota. --> La pagina del SSH agent esta en como crear las claves SSH de gihub <--
 
 -->git config --global (configuración global) user.email "Email"(para establecer un correo en los commits)
 -->git config --global (configuración global) user.name "Nombre"(para establecer un nombre en los commits)
@@ -37,3 +42,25 @@ Borras archivo pero permanecen en la stagin area
 --> git restore 'archivo'
 Recupera el archivo que esta borrado del directorio.
 
+Para generar claves ssh en gihub debes buscar la pagina oficial de github que te indica como hacerlo.
+De momento yo estoy usando el correo de "cheche.2001.jam@gmail.com" y la contraseña sera "combatarms"
+SHA256:odsKvQK+AmM3m4woXGObVIoyw+OFzOh8bxqKZkC2hV4 cheche.2001.jam@gmail.com
+The key's randomart image is:
++--[ED25519 256]--+
+|                 |
+|                 |
+|  .     .        |
+| + E . . .       |
+|O * o . S        |
+|O@.X . o         |
+|@=XoO o .        |
+|=OoBoo o         |
+|=ooo+oo          |
++----[SHA256]-----+
+
+--> git push -u (hace lo mismo que '--set-upstream') oringin 'rama'
+Este comando permite "mandar" o "subir" los cambios al repositorio
+Nota. ---> Si hay algun inconveniente, revisa primero las claves SSH <--
+
+--> git checkout -b 'nombre rama'
+El comando nos permite crear una nueva rama del proyecto para trabajar

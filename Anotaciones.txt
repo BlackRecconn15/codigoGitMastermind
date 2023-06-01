@@ -10,7 +10,8 @@ Sirve para agragar los archivos a stagin area previo al commit
 Estado del repositorio(si faltan archivos para agragar o que se modificaron)
 
 -->git commit -m (mensaje) "Mensaje del commit"
-Sirve para ejecutar un commit "Una nueva rama" en el proyecto.
+Sirve para ejecutar un commit "Una nueva rama" en el proyecto. Si le agragamos el argumento "-a" esto hace
+que se pasen todos los archivos saltandose el staging area.
 
 --> git clone 'liga del repositorio'
 Es para copiar un proyecto de github, si piensas hacerlo por SSH debes tener la clave del mismo SSH. Sino

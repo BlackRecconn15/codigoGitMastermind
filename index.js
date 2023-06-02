@@ -54,3 +54,8 @@ const getBlogContent = async () => {
 getBlogContent();
 
 //cambio 1 prueba
+//cambio 2 prueba
+<<<<<<< HEAD
+=======
+//cambio 3 prueba
+>>>>>>> cd0f101 (Cambio backend 3)

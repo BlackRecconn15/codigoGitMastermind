@@ -24,7 +24,7 @@ Ambos comandos sirven para configurar algunos aspectos de Git
 
 -->git log
 Nos da un pequeño resumen de los comit que se han hecho. Agregar "--oneline" acorta la informacion de 
-los commit
+los commit y "--graph" te muestra un pequeño grafico de los commits.
 
 -->git checkout 'a22dc21'
 Sirve para volver a una version anterior del proyecto(Se tienen que poner los primeros numeros 
@@ -60,8 +60,33 @@ The key's randomart image is:
 +----[SHA256]-----+
 
 --> git push -u (hace lo mismo que '--set-upstream') oringin 'rama'
-Este comando permite "mandar" o "subir" los cambios al repositorio
+Este comando permite "mandar" o "subir" los cambios al repositorio y el comentario "-u" es para crear la rama
+en el repositorio solo se hace 1 vez.
 Nota. ---> Si hay algun inconveniente, revisa primero las claves SSH <--
 
 --> git checkout -b 'nombre rama'
 El comando nos permite crear una nueva rama del proyecto para trabajar
+
+------------------------
+---> Pasos para hacer mas ramas en local <---
+
+Esto se realiza cuando estas en una rama aparte (o la tuya principal para el trabajo) en la cual puedes hacer 
+mas ramas para posteriormente mandarlas en 1 sola.
+
+--> Primero debes crear otra rama dentro de tu rama de trabajo con "git checkout -b 'nombre rama'"
+
+--> Despues de que hayas trabajado sobre esa rama, haces un 'commit normal' con el comando "git commit -m 'Mensaje'"
+
+--> Posteriormente debes de regresar a tu rama origen (la de trabajo, no la master) con el comando 
+"git checkout 'rama de trabajo'" y desde hay debes dar un "merge" con el comando 
+"git merge 'la rama que creaste y donde hiciste el commit anterior'"
+
+y listo
+
+----------------------
+---> Los "forks" son cuando trabajas en proyectos aparte o de opensource. Cada que se hace esto tienes que crear una 
+nueva rama y trabajar normalmente, haces el commit y mandas los cambios normamente con el 'git push'.
+
+---> Issues = erroes o bugs
+
+--> "git branch" te muestra todas las ramas creadas.

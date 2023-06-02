@@ -88,3 +88,5 @@ y listo
 nueva rama y trabajar normalmente, haces el commit y mandas los cambios normamente con el 'git push'.
 
 ---> Issues = erroes o bugs
+
+--> Con git branch 'nombre de la rama (sin comillas)'

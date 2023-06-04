@@ -90,3 +90,10 @@ nueva rama y trabajar normalmente, haces el commit y mandas los cambios normamen
 ---> Issues = erroes o bugs
 
 --> "git branch" te muestra todas las ramas creadas.
+
+el git splash se puede hacer desde git hub y es mucho mas facil
+este sirve para juntar varios commits en una sola cosa
+
+git stash nos sirve para poner nuestro trabajo como en una especie de "stand by" y lo quita momentaneamente
+del entorno de trabajo pero este no se elimina, para recuperar el contenido tenemos el comando 'git pop' pero
+antes estaria bien escribir el comando 'git stash list' para ver si esta dentro de esta seccion.
